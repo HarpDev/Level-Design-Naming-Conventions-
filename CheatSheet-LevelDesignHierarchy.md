@@ -1,0 +1,36 @@
+- GRP_Level01
+  - GRP_Geometry
+    - GRP_MainHall
+      - GEO_Floor_MainHall
+      - GEO_Wall_North
+      - GEO_Wall_South
+      - GEO_Wall_East
+      - GEO_Wall_West
+      - GEO_Ceiling_MainHall
+    - GRP_Kitchen
+      - GEO_Floor_Kitchen
+      - GEO_Wall_KitchenNorth
+      - GEO_Wall_KitchenWest
+      - GEO_Counter_Kitchen
+  - GRP_Props
+    - GRP_MainHallProps
+      - PROP_Table_Center
+      - PROP_Chair_01
+      - PROP_Chair_02
+      - PROP_Door_Main
+        - TRG_Door_Entry  (Child of PROP_Door_Main for interaction)
+    - GRP_KitchenProps
+      - PROP_Stove_Kitchen
+      - PROP_Sink_Kitchen
+      - PROP_Cabinet_01
+      - PROP_Cabinet_02
+  - GRP_Triggers
+    - TRG_Zone_Combat  (Independent trigger for an encounter area)
+    - TRG_Exit_Level   (Independent trigger for level transition)
+  - GRP_Lighting
+    - LGT_Point_Ambient_MainHall
+    - LGT_Spot_Doorway
+    - LGT_Point_KitchenCeiling
+  - GRP_Environment
+    - ENV_Skybox
+    - ENV_Fog_Ambient
